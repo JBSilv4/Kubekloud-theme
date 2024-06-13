@@ -28,7 +28,7 @@ function prompt_command() {
     # Configura o PS1 (Prompt String 1)
     PS1="${BLUE}\h ${CYAN}\w"
     if [ -n "$GIT_BRANCH" ]; then
-        PS1+=" ${PURPLE}git:(${YELLOW}${GIT_BRANCH}${PURPLE})"
+        PS1+=" ${BLUE}git:(${RED}${GIT_BRANCH}${BLUE})"
     fi
     PS1+=" ${ARROW_COLOR}➜ ${RESET} "
 }
