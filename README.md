@@ -2,7 +2,7 @@
 
 Faça um clone do repositorio:
 ```bash
-git clone 
+git clone https://github.com/JBSilv4/Kubekloud-theme.git
 ```
 
 Agora é só executar esse comando:
