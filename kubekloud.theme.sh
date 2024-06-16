@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 # Cores
-BLUE="\[\033[1;34m\]"
-CYAN="\[\033[1;36m\]"
-GREEN="\[\033[1;32m\]"
-RED="\[\033[1;31m\]"
-PURPLE="\[\033[1;35m\]"
-YELLOW="\[\033[1;33m\]"
+BLUE="\[\033[1;94m\]"
+CYAN="\[\033[1;96m\]"
+GREEN="\[\033[1;92m\]"
+RED="\[\033[1;91m\]"
+PURPLE="\[\033[1;95m\]"
+YELLOW="\[\033[1;93m\]"
 RESET="\[\033[0m\]"
 
 # Função para obter a branch git
@@ -28,7 +28,7 @@ function prompt_command() {
     # Configura o PS1 (Prompt String 1)
     PS1="${BLUE}\h ${CYAN}\w"
     if [ -n "$GIT_BRANCH" ]; then
-        PS1+=" ${BLUE}git:(${RED}${GIT_BRANCH}${BLUE})"
+        PS1+=" ${BLUE}git:(${PURPLE}${GIT_BRANCH}${BLUE})"
     fi
     PS1+=" ${ARROW_COLOR}➜ ${RESET} "
 }
