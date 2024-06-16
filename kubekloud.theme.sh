@@ -30,7 +30,7 @@ function prompt_command() {
     if [ -n "$GIT_BRANCH" ]; then
         PS1+=" ${BLUE}git:(${PURPLE}${GIT_BRANCH}${BLUE})"
     fi
-    PS1+=" ${ARROW_COLOR}➜ ${RESET} "
+    PS1+=" ${ARROW_COLOR}➜ ${RESET}"
 }
 
 # Define o comando de prompt para ser executado antes de mostrar o prompt
